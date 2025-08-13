@@ -1,0 +1,61 @@
+// Validator objects
+var RequiredValidator = {
+    fieldId: 'username',
+    errorMessage: 'Username is required',
+    
+    validate: function() {
+        var field = document.getElementById(this.fieldId);
+        return field.value.trim() !== '';
+    },
+    
+    showError: function() {
+        var errorDiv = document.getElementById(this.fieldId + '_error');
+        errorDiv.textContent = this.errorMessage;
+        errorDiv.style.display = 'block';
+    }
+};
+
+var EmailValidator = {
+    fieldId: 'email',
+    errorMessage: 'Valid email is required',
+    
+    validate: function() {
+        var field = document.getElementById(this.fieldId);
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(field.value);
+    },
+    
+    showError: function() {
+        var errorDiv = document.getElementById(this.fieldId + '_error');
+        errorDiv.textContent = this.errorMessage;
+        errorDiv.style.display = 'block';
+    }
+};
+
+// Initialize validator array
+var Page_Validators = [];
+
+// Add validators
+Page_Validators.push(RequiredValidator);
+Page_Validators.push(EmailValidator);
+
+// Execute validators on form submission
+document.getElementById('myForm').addEventListener('submit', function(e) {
+    var isValid = true;
+    
+    // Clear previous errors
+    var errorDivs = document.querySelectorAll('.error');
+    errorDivs.forEach(div => div.style.display = 'none');
+    
+    // Run all validators
+    for (var i = 0; i < Page_Validators.length; i++) {
+        if (!Page_Validators[i].validate()) {
+            Page_Validators[i].showError();
+            isValid = false;
+        }
+    }
+    
+    if (!isValid) {
+        e.preventDefault(); // Stop form submission
+    }
+});
