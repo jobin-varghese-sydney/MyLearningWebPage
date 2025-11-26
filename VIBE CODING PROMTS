@@ -1,5 +1,7 @@
 
  Vibe-coding for Power Apps,
+  A new AI-first experience that could reshape how we think about both Canvas and Model-driven apps.
+ 
 
 If anyone wants to try my promt, would love to see your results:
 Agile Poker Planning:
@@ -23,3 +25,11 @@ I want to create a agile planning poker app, the app should fulfill these key re
 🔹each round has a input for round/jira id
 🔹when round completes a confirm button will appear for session owner, this will save the, comma separated list of scores, average score, common score, rounded Fibonacci input box score, comma separated list of user names, session id, round id, session owner
 🔹the ui should use use atleast 75% of with screen width
+
+
+Return Order Management scenario, and the results were promising — fast, intuitive, and actually useful.
+https://www.linkedin.com/pulse/vibe-coding-power-apps-here-alexander-tengn%C3%A4s-0ypff/?trackingId=ZtXkPfYnQhyJDoUtGzTUXg%3D%3D
+1.“Create an app for managing return orders. The app will later be connected to D365 F&SCM.”
+    The roles created were Return Clerk, Customer Service Agent, and Warehouse Manager..
+2. I asked it to create a dashboard summarizing return order information in a clean, user-friendly way.
+3.When I asked it to generate additional sample data and fine-tune the main return order list and edit form, things quickly started taking shape:
