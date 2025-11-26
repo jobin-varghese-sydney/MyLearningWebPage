@@ -1,0 +1,25 @@
+
+ Vibe-coding for Power Apps,
+
+If anyone wants to try my promt, would love to see your results:
+Agile Poker Planning:
+==================================
+I want to create a agile planning poker app, the app should fulfill these key requirements 
+🔹users can create sessions 
+🔹sessions can be shared by sharing session code (6 digit number) 
+🔹users can join session by entering session code 
+🔹each session can have multiple rounds 
+🔹when a new session is created go straight to a new round
+🔹when joining a session go straight to a new round
+🔹each round all users submit a score 
+🔹as a user submits score the other users will see they have submitted but not show their score 
+🔹when all users have submitted score all users see the scores 
+🔹when all users have submitted the average score, and most common, and rounded up to closest Fibonacci number from average are shown 
+🔹the rounded up Fibonacci number should be editable 
+🔹the session owner can end a round early by pressing a button 
+🔹the session owner can start a new round 
+🔹when a new round starts all user scores are reset 
+🔹new users or returning users always join latest round 
+🔹each round has a input for round/jira id
+🔹when round completes a confirm button will appear for session owner, this will save the, comma separated list of scores, average score, common score, rounded Fibonacci input box score, comma separated list of user names, session id, round id, session owner
+🔹the ui should use use atleast 75% of with screen width
